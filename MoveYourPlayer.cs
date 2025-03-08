@@ -25,7 +25,7 @@ public class MoveYourPlayer : MonoBehaviour
         //And Create your Vector3
         Vector3 Vector3name = new Vector3(X, 0, Z) * Whatever * Time.deltaTime;
 
-        transform.Translate(Vector3name);
+        cc.Move(position + Vector3name);
     }
 
 }
