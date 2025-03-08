@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MoveYourPlayer : MonoBehaviour
 {
+    public CharacterController cc;
  
                                   //This code is a "How to move your player in unity"
 
@@ -11,7 +12,7 @@ public class MoveYourPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
